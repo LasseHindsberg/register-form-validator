@@ -12,22 +12,55 @@
 
 <body>
     <main>
-        <form action="post">
+        <div class="wrapper">
+
+            <h1>Registrer bruger:</h1>
+            <form action="post">
+                <fieldset>
+                    <legend>For- & Efternavn.</legend>
+                    <div class="inputGroup">
+                        <label for="fname">Fornavn:</label>
+                        <input type="text" name="firstName" id="fname" placeholder="John">
+                        <p class="hint">Indtast fornavn her.</p>
+                        <span class="statusMessage fname"></span>
+                    </div>
+                    <div class="inputGroup">
+                        <label for="lname">Efternavn:</label>
+                        <input type="text" name="lastName" id="lname" placeholder="Doe">
+                        <p class="hint">Indtast efternavn her.</p>
+                        <span class="statusMessage lname"></span>
+                </fieldset>
+        </div>
+        <fieldset>
+            <legend>Adresse.</legend>
             <div class="inputGroup">
-                <label for="fname">Fornavn:</label>
-                <input type="text" name="firstName" id="fname">
-                <span class="statusMessage fname"></span>
+                <label for="vejnavn">Vejnavn:</label>
+                <input type="text" name="vejnavn" id="vejnavn" placeholder="Solvej">
+                <p class="hint">Indtast vejnavn her.</p>
+                <span class="statusMessage vejnavn"></span>
             </div>
             <div class="inputGroup">
-                <label for="lname">Efternavn:</label>
-                <input type="text" name="lastName" id="lname">
-                <span class="statusMessage lname"></span>
+                <label for="husnr">Husnr:</label>
+                <input type="text" name="husnr" id="husnr" placeholder="12">
+                <p class="hint">Indtast husnummer her.</p>
+                <span class="statusMessage husnr"></span>
             </div>
             <div class="inputGroup">
-                <label for="address">Adresse:</label>
-                <input type="text" name="address" id="address">
-                <span class="statusMessage address"></span>
+                <label for="postnr">Postnr:</label>
+                <input type="text" pattern="0-9" name="postnr" id="postnr" placeholder="1234">
+                <p class="hint">Indtast postnummer her.</p>
+                <span class="statusMessage postnr"></span>
             </div>
+            <div class="inputGroup">
+                <label for="city">Bynavn:</label>
+                <input type="text" name="city" id="city" placeholder="Roskilde">
+                <p class="hint">Indtast bynavn her.</p>
+                <span class="statusMessage city"></span>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Log ind.</legend>
             <div class="inputGroup">
                 <label for="uname">Brugernavn:</label>
                 <input type="text" name="username" id="uname">
@@ -43,10 +76,12 @@
                 <input type="email" name="email" id="email">
                 <span class="statusMessage email"></span>
             </div>
-            <button type="submit">Log Ind.</button>
+        </fieldset>
+        <button type="submit">Log Ind.</button>
         </form>
+        </div>
     </main>
-    <script src="./js/script.js" defer></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
