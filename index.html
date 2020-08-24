@@ -11,10 +11,42 @@
 </head>
 
 <body>
-    <div class="wrapper">
-
-    </div>
-    <script src="./js/script.js"></script>
+    <main>
+        <form action="post">
+            <div class="inputGroup">
+                <label for="fname">Fornavn:</label>
+                <input type="text" name="firstName" id="fname">
+                <span class="statusMessage fname"></span>
+            </div>
+            <div class="inputGroup">
+                <label for="lname">Efternavn:</label>
+                <input type="text" name="lastName" id="lname">
+                <span class="statusMessage lname"></span>
+            </div>
+            <div class="inputGroup">
+                <label for="address">Adresse:</label>
+                <input type="text" name="address" id="address">
+                <span class="statusMessage address"></span>
+            </div>
+            <div class="inputGroup">
+                <label for="uname">Brugernavn:</label>
+                <input type="text" name="username" id="uname">
+                <span class="statusMessage uname"></span>
+            </div>
+            <div class="inputGroup">
+                <label for="pword">Kodeord:</label>
+                <input type="password" name="password" id="pword">
+                <span class="statusMessage pword"></span>
+            </div>
+            <div class="inputGroup">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                <span class="statusMessage email"></span>
+            </div>
+            <button type="submit">Log Ind.</button>
+        </form>
+    </main>
+    <script src="./js/script.js" defer></script>
 </body>
 
 </html>
