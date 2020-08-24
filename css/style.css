@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'pt-sans', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset {
+    width: 200px;
+    margin: 15px;
+    padding: 25px;
+}
+
+input {
+    padding-top: 5px;
+    border: none;
+    border-bottom: solid 2px #808080;
+    /* margin-bottom: 5px; */
+}
+
+.hint {
+    font-size: 0.75em;
+    color: grey;
+}
