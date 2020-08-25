@@ -5,83 +5,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Registreringsformular</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/87c28705a7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <main>
-        <div class="wrapper">
+        <section class="wrapper">
 
+            
             <h1>Registrer bruger:</h1>
+            <!-- Start of function -->
             <form action="post">
                 <fieldset>
+                    <!-- First section of form - First and last name -->
                     <legend>For- & Efternavn.</legend>
+                    <!-- First name -->
                     <div class="inputGroup">
                         <label for="fname">Fornavn:</label>
                         <input type="text" name="firstName" id="fname" placeholder="John">
                         <p class="hint">Indtast fornavn her.</p>
                         <span class="statusMessage fname"></span>
                     </div>
+                    <!-- Last name -->
                     <div class="inputGroup">
                         <label for="lname">Efternavn:</label>
                         <input type="text" name="lastName" id="lname" placeholder="Doe">
                         <p class="hint">Indtast efternavn her.</p>
                         <span class="statusMessage lname"></span>
+                    </fieldset>
+                </div>
+                <!-- End of first section -->
+                <fieldset>
+                    <!-- Start of second section - Address -->
+                    <legend>Adresse.</legend>
+                    <!-- Road -->
+                    <div class="inputGroup">
+                        <label for="vejnavn">Vejnavn:</label>
+                        <input type="text" name="vejnavn" id="vejnavn" placeholder="Solvej">
+                        <p class="hint">Indtast vejnavn her.</p>
+                        <span class="statusMessage vejnavn"></span>
+                    </div>
+                    <!-- House number -->
+                    <div class="inputGroup">
+                        <label for="husnr">Husnr:</label>
+                        <input type="text" name="husnr" id="husnr" placeholder="12">
+                        <p class="hint">Indtast husnummer her.</p>
+                        <span class="statusMessage husnr"></span>
+                    </div>
+                    <!-- postal code -->
+                    <div class="inputGroup">
+                        <label for="postnr">Postnr:</label>
+                        <input type="text" pattern="0-9" name="postnr" id="postnr" placeholder="1234">
+                        <p class="hint">Indtast postnummer her.</p>
+                        <span class="statusMessage postnr"></span>
+                    </div>
+                    <!-- City -->
+                    <div class="inputGroup">
+                        <label for="city">Bynavn:</label>
+                        <input type="text" name="city" id="city" placeholder="Roskilde">
+                        <p class="hint">Indtast bynavn her. </p>
+                        <span class="statusMessage city"></span>
+                    </div>
                 </fieldset>
-        </div>
-        <fieldset>
-            <legend>Adresse.</legend>
-            <div class="inputGroup">
-                <label for="vejnavn">Vejnavn:</label>
-                <input type="text" name="vejnavn" id="vejnavn" placeholder="Solvej">
-                <p class="hint">Indtast vejnavn her.</p>
-                <span class="statusMessage vejnavn"></span>
-            </div>
-            <div class="inputGroup">
-                <label for="husnr">Husnr:</label>
-                <input type="text" name="husnr" id="husnr" placeholder="12">
-                <p class="hint">Indtast husnummer her.</p>
-                <span class="statusMessage husnr"></span>
-            </div>
-            <div class="inputGroup">
-                <label for="postnr">Postnr:</label>
-                <input type="text" pattern="0-9" name="postnr" id="postnr" placeholder="1234">
-                <p class="hint">Indtast postnummer her.</p>
-                <span class="statusMessage postnr"></span>
-            </div>
-            <div class="inputGroup">
-                <label for="city">Bynavn:</label>
-                <input type="text" name="city" id="city" placeholder="Roskilde">
-                <p class="hint">Indtast bynavn her.</p>
-                <span class="statusMessage city"></span>
-            </div>
-        </fieldset>
-
-        <fieldset>
-            <legend>Log ind.</legend>
-            <div class="inputGroup">
-                <label for="uname">Brugernavn:</label>
-                <input type="text" name="username" id="uname">
-                <span class="statusMessage uname"></span>
-            </div>
-            <div class="inputGroup">
-                <label for="pword">Kodeord:</label>
-                <input type="password" name="password" id="pword">
-                <span class="statusMessage pword"></span>
-            </div>
-            <div class="inputGroup">
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email">
-                <span class="statusMessage email"></span>
-            </div>
-        </fieldset>
-        <button type="submit">Log Ind.</button>
+                <!-- End of second section -->
+                <fieldset>
+                    <!-- Start of third section - Log in -->
+                    <legend>Log ind.</legend>
+                    <!-- Username -->
+                    <div class="inputGroup">
+                    <label for="uname">Brugernavn:</label>
+                    <input type="text" name="username" id="uname">
+                    <span class="statusMessage uname"></span>
+                </div>
+                <!-- Password -->
+                <div class="inputGroup">
+                    <label for="pword">Kodeord:</label>
+                    <input type="password" name="password" id="pword">
+                    <span class="statusMessage pword"></span>
+                </div>
+                <!-- Email -->
+                <div class="inputGroup">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                    <span class="statusMessage email"></span>
+                </div>
+            </fieldset>
+            <!-- End of third section -->
+            
+            <!-- Log in button -->
+            <button type="submit">Log Ind.</button>
         </form>
-        </div>
+    </section>
     </main>
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js" defer></script>
 </body>
 
 </html>

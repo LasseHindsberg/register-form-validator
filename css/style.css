@@ -8,22 +8,39 @@
 }
 
 main {
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: url(../img/jeremy-bishop-G9i_plbfDgk-unsplash.jpg);
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+}
+
+.wrapper{
+    background-color: rgba(3, 9, 13, 0.66);
+    border-radius: 35px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 fieldset {
     width: 200px;
     margin: 15px;
     padding: 25px;
+    border-radius: 25px;
+    border-color: #C2F213;
 }
 
 input {
     padding-top: 5px;
+    background-color: transparent;
     border: none;
-    border-bottom: solid 2px #808080;
+    border-bottom: solid 2px #EEF279;
     /* margin-bottom: 5px; */
 }
 
@@ -31,3 +48,33 @@ input {
     font-size: 0.75em;
     color: grey;
 }
+
+button {
+    border: none;
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    background: #EEF279;
+}
+
+
+/* Color Theme Swatches in Hex */
+.Illustration-1-hex { color: #03090D; }
+.Illustration-2-hex { color: #111E26; }
+.Illustration-3-hex { color: #C2F213; }
+.Illustration-4-hex { color: #EAF205; }
+.Illustration-5-hex { color: #EEF279; }
+
+/* Color Theme Swatches in RGBA */
+.Illustration-1-rgba { color: rgba(2, 8, 12, 1); }
+.Illustration-2-rgba { color: rgba(16, 30, 38, 1); }
+.Illustration-3-rgba { color: rgba(193, 242, 19, 1); }
+.Illustration-4-rgba { color: rgba(234, 242, 4, 1); }
+.Illustration-5-rgba { color: rgba(238, 242, 121, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Illustration-1-hsla { color: hsla(202, 66, 3, 1); }
+.Illustration-2-hsla { color: hsla(202, 38, 10, 1); }
+.Illustration-3-hsla { color: hsla(73, 89, 51, 1); }
+.Illustration-4-hsla { color: hsla(61, 96, 48, 1); }
+.Illustration-5-hsla { color: hsla(61, 82, 71, 1); }

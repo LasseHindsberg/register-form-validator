@@ -65,5 +65,7 @@ form.addEventListener("submit", function (event) {
 
     if (!status) return;
 
-    fetch("login.php");
+    // fetch("login.php");
+
+    // SOooooooooooooooo ALl of this didnt work so im going rogue >:(
 });
