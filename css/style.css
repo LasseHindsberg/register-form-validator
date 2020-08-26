@@ -20,7 +20,7 @@ main {
     text-align: center;
 }
 
-.wrapper{
+.wrapper {
     background-color: rgba(3, 9, 13, 0.66);
     border-radius: 35px;
     padding: 10px;
@@ -41,6 +41,9 @@ input {
     background-color: transparent;
     border: none;
     border-bottom: solid 2px #EEF279;
+    color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     /* margin-bottom: 5px; */
 }
 
@@ -58,23 +61,67 @@ button {
 }
 
 
+/* Yes I know, this style sheet is a mess, i didnt bother cleaning it up or organizing :) */
+
 /* Color Theme Swatches in Hex */
-.Illustration-1-hex { color: #03090D; }
-.Illustration-2-hex { color: #111E26; }
-.Illustration-3-hex { color: #C2F213; }
-.Illustration-4-hex { color: #EAF205; }
-.Illustration-5-hex { color: #EEF279; }
+.Illustration-1-hex {
+    color: #03090D;
+}
+
+.Illustration-2-hex {
+    color: #111E26;
+}
+
+.Illustration-3-hex {
+    color: #C2F213;
+}
+
+.Illustration-4-hex {
+    color: #EAF205;
+}
+
+.Illustration-5-hex {
+    color: #EEF279;
+}
 
 /* Color Theme Swatches in RGBA */
-.Illustration-1-rgba { color: rgba(2, 8, 12, 1); }
-.Illustration-2-rgba { color: rgba(16, 30, 38, 1); }
-.Illustration-3-rgba { color: rgba(193, 242, 19, 1); }
-.Illustration-4-rgba { color: rgba(234, 242, 4, 1); }
-.Illustration-5-rgba { color: rgba(238, 242, 121, 1); }
+.Illustration-1-rgba {
+    color: rgba(2, 8, 12, 1);
+}
+
+.Illustration-2-rgba {
+    color: rgba(16, 30, 38, 1);
+}
+
+.Illustration-3-rgba {
+    color: rgba(193, 242, 19, 1);
+}
+
+.Illustration-4-rgba {
+    color: rgba(234, 242, 4, 1);
+}
+
+.Illustration-5-rgba {
+    color: rgba(238, 242, 121, 1);
+}
 
 /* Color Theme Swatches in HSLA */
-.Illustration-1-hsla { color: hsla(202, 66, 3, 1); }
-.Illustration-2-hsla { color: hsla(202, 38, 10, 1); }
-.Illustration-3-hsla { color: hsla(73, 89, 51, 1); }
-.Illustration-4-hsla { color: hsla(61, 96, 48, 1); }
-.Illustration-5-hsla { color: hsla(61, 82, 71, 1); }
+.Illustration-1-hsla {
+    color: hsla(202, 66, 3, 1);
+}
+
+.Illustration-2-hsla {
+    color: hsla(202, 38, 10, 1);
+}
+
+.Illustration-3-hsla {
+    color: hsla(73, 89, 51, 1);
+}
+
+.Illustration-4-hsla {
+    color: hsla(61, 96, 48, 1);
+}
+
+.Illustration-5-hsla {
+    color: hsla(61, 82, 71, 1);
+}

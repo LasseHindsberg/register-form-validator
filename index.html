@@ -14,27 +14,27 @@
     <main>
         <section class="wrapper">
 
-            
+
             <h1>Registrer bruger:</h1>
             <!-- Start of function -->
-            <form action="post">
+            <form action="post" novalidate>
                 <fieldset>
                     <!-- First section of form - First and last name -->
                     <legend>For- & Efternavn.</legend>
                     <!-- First name -->
                     <div class="inputGroup">
                         <label for="fname">Fornavn:</label>
-                        <input type="text" name="firstName" id="fname" placeholder="John">
+                        <input type="text" name="firstname" id="fname" placeholder="John">
                         <p class="hint">Indtast fornavn her.</p>
-                        <span class="statusMessage fname"></span>
+                        <span class="statusMessage firstname"></span>
                     </div>
                     <!-- Last name -->
                     <div class="inputGroup">
                         <label for="lname">Efternavn:</label>
-                        <input type="text" name="lastName" id="lname" placeholder="Doe">
+                        <input type="text" name="lastname" id="lname" placeholder="Doe">
                         <p class="hint">Indtast efternavn her.</p>
-                        <span class="statusMessage lname"></span>
-                    </fieldset>
+                        <span class="statusMessage lastname"></span>
+                </fieldset>
                 </div>
                 <!-- End of first section -->
                 <fieldset>
@@ -75,29 +75,29 @@
                     <legend>Log ind.</legend>
                     <!-- Username -->
                     <div class="inputGroup">
-                    <label for="uname">Brugernavn:</label>
-                    <input type="text" name="username" id="uname">
-                    <span class="statusMessage uname"></span>
-                </div>
-                <!-- Password -->
-                <div class="inputGroup">
-                    <label for="pword">Kodeord:</label>
-                    <input type="password" name="password" id="pword">
-                    <span class="statusMessage pword"></span>
-                </div>
-                <!-- Email -->
-                <div class="inputGroup">
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email">
-                    <span class="statusMessage email"></span>
-                </div>
-            </fieldset>
-            <!-- End of third section -->
-            
-            <!-- Log in button -->
-            <button type="submit">Log Ind.</button>
-        </form>
-    </section>
+                        <label for="uname">Brugernavn:</label>
+                        <input type="text" name="username" id="uname" required>
+                        <span class="statusMessage username"></span>
+                    </div>
+                    <!-- Password -->
+                    <div class="inputGroup">
+                        <label for="pword">Kodeord:</label>
+                        <input type="password" name="password" id="pword" required>
+                        <span class="statusMessage password"></span>
+                    </div>
+                    <!-- Email -->
+                    <div class="inputGroup">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
+                        <span class="statusMessage email"></span>
+                    </div>
+                </fieldset>
+                <!-- End of third section -->
+
+                <!-- Log in button -->
+                <button type="submit">Log Ind.</button>
+            </form>
+        </section>
     </main>
     <script src="./js/script.js" defer></script>
 </body>
